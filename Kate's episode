@@ -1,0 +1,2434 @@
+INT. BLACK - DAY
+label fem_custom_1
+
+@DEFAULT stands screen center and DEFAULT faces right and DEFAULT starts idle
+
+        NARRATOR
+    What does your character look like?
+
+choice [layout]
+"Skin Tone" {
+goto fem_skin_1
+} "Hairstyle & Color" {
+goto fem_hair_1
+} "Facial Features" {
+goto fem_faceoptions_1
+} <PREMIUM> "This is perfect!" {
+goto fem_end_1
+}
+
+####################### FACE APPEARANCE #######################
+
+label fem_faceoptions_1
+
+        NARRATOR
+    Facial features.
+
+choice
+"Face Shape" {
+goto fem_face_1
+} "Eyes" {
+goto fem_eyes_1
+} "Eyebrows" {
+goto fem_brows_1
+} "Nose" {
+goto fem_nose_1
+} "Lips" {
+goto fem_mouth_1
+} <PREMIUM> "Main Menu" {
+goto fem_custom_1
+}
+
+####################### SKIN COLOR #######################
+
+label fem_skin_1
+
+        NARRATOR
+    All skin tones.
+
+choice
+"Neutral Shades" {
+goto fem_neutralskin_1
+} "Rose Shades" {
+goto fem_roseskin_1
+} "Gold Shades" {
+goto fem_goldskin_1
+} "Copper Shades" {
+goto fem_copperskin_1
+} "Ash Shades" {
+goto fem_ashskin_1
+} <PREMIUM> "Main Menu" {
+goto fem_custom_1
+}
+
+label fem_neutralskin_1
+
+        NARRATOR
+    Neutral skin tones.
+
+choice [shouldPaginate: YES]
+"Neutral 00" {
+@DEFAULT changes bodyColor into Neutral 00
+goto fem_neutralskin_1
+} "Neutral 01" {
+@DEFAULT changes bodyColor into Neutral 01
+goto fem_neutralskin_1
+} "Neutral 02" {
+@DEFAULT changes bodyColor into Neutral 02
+goto fem_neutralskin_1
+} "Neutral 03" {
+@DEFAULT changes bodyColor into Neutral 03
+goto fem_neutralskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Neutral 04" {
+@DEFAULT changes bodyColor into Neutral 04
+goto fem_neutralskin_1
+} "Neutral 05" {
+@DEFAULT changes bodyColor into Neutral 05
+goto fem_neutralskin_1
+} "Neutral 06" {
+@DEFAULT changes bodyColor into Neutral 06
+goto fem_neutralskin_1
+} "Neutral 07" {
+@DEFAULT changes bodyColor into Neutral 07
+goto fem_neutralskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Neutral 08" {
+@DEFAULT changes bodyColor into Neutral 08
+goto fem_neutralskin_1
+} "Neutral 09" {
+@DEFAULT changes bodyColor into Neutral 09
+goto fem_neutralskin_1
+} "Neutral 10" {
+@DEFAULT changes bodyColor into Neutral 10
+goto fem_neutralskin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+}
+
+label fem_roseskin_1
+
+        NARRATOR
+    Rose skin tones.
+
+choice [shouldPaginate: YES]
+"Rose 00" {
+@DEFAULT changes bodyColor into Rose 00
+goto fem_roseskin_1
+} "Rose 01" {
+@DEFAULT changes bodyColor into Rose 01
+goto fem_roseskin_1
+} "Rose 02" {
+@DEFAULT changes bodyColor into Rose 02
+goto fem_roseskin_1
+} "Rose 03" {
+@DEFAULT changes bodyColor into Rose 03
+goto fem_roseskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Rose 04" {
+@DEFAULT changes bodyColor into Rose 04
+goto fem_roseskin_1
+} "Rose 05" {
+@DEFAULT changes bodyColor into Rose 05
+goto fem_roseskin_1
+} "Rose 06" {
+@DEFAULT changes bodyColor into Rose 06
+goto fem_roseskin_1
+} "Rose 07" {
+@DEFAULT changes bodyColor into Rose 07
+goto fem_roseskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Rose 08" {
+@DEFAULT changes bodyColor into Rose 08
+goto fem_roseskin_1
+} "Rose 09" {
+@DEFAULT changes bodyColor into Rose 09
+goto fem_roseskin_1
+} "Rose 10" {
+@DEFAULT changes bodyColor into Rose 10
+goto fem_roseskin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+}
+
+label fem_goldskin_1
+
+        NARRATOR
+    Gold skin tones.
+
+choice [shouldPaginate: YES]
+"Gold 00" {
+@DEFAULT changes bodyColor into Gold 00
+goto fem_goldskin_1
+} "Gold 01" {
+@DEFAULT changes bodyColor into Gold 01
+goto fem_goldskin_1
+} "Gold 02" {
+@DEFAULT changes bodyColor into Gold 02
+goto fem_goldskin_1
+} "Gold 03" {
+@DEFAULT changes bodyColor into Gold 03
+goto fem_goldskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Gold 04" {
+@DEFAULT changes bodyColor into Gold 04
+goto fem_goldskin_1
+} "Gold 05" {
+@DEFAULT changes bodyColor into Gold 05
+goto fem_goldskin_1
+} "Gold 06" {
+@DEFAULT changes bodyColor into Gold 06
+goto fem_goldskin_1
+} "Gold 07" {
+@DEFAULT changes bodyColor into Gold 07
+goto fem_goldskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Gold 08" {
+@DEFAULT changes bodyColor into Gold 08
+goto fem_goldskin_1
+} "Gold 09" {
+@DEFAULT changes bodyColor into Gold 09
+goto fem_goldskin_1
+} "Gold 10" {
+@DEFAULT changes bodyColor into Gold 10
+goto fem_goldskin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+}
+
+label fem_copperskin_1
+
+        NARRATOR
+    Copper skin tones.
+
+choice [shouldPaginate: YES]
+"Copper 00" {
+@DEFAULT changes bodyColor into Copper 00
+goto fem_copperskin_1
+} "Copper 01" {
+@DEFAULT changes bodyColor into Copper 01
+goto fem_copperskin_1
+} "Copper 02" {
+@DEFAULT changes bodyColor into Copper 02
+goto fem_copperskin_1
+} "Copper 03" {
+@DEFAULT changes bodyColor into Copper 03
+goto fem_copperskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Copper 04" {
+@DEFAULT changes bodyColor into Copper 04
+goto fem_copperskin_1
+} "Copper 05" {
+@DEFAULT changes bodyColor into Copper 05
+goto fem_copperskin_1
+} "Copper 06" {
+@DEFAULT changes bodyColor into Copper 06
+goto fem_copperskin_1
+} "Copper 07" {
+@DEFAULT changes bodyColor into Copper 07
+goto fem_copperskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Copper 08" {
+@DEFAULT changes bodyColor into Copper 08
+goto fem_copperskin_1
+} "Copper 09" {
+@DEFAULT changes bodyColor into Copper 09
+goto fem_copperskin_1
+} "Copper 10" {
+@DEFAULT changes bodyColor into Copper 10
+goto fem_copperskin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+}
+
+label fem_ashskin_1
+
+        NARRATOR
+    Ash skin tones.
+
+choice [shouldPaginate: YES]
+"Ash 00" {
+@DEFAULT changes bodyColor into Ash 00
+goto fem_ashskin_1
+} "Ash 01" {
+@DEFAULT changes bodyColor into Ash 01
+goto fem_ashskin_1
+} "Ash 02" {
+@DEFAULT changes bodyColor into Ash 02
+goto fem_ashskin_1
+} "Ash 03" {
+@DEFAULT changes bodyColor into Ash 03
+goto fem_ashskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Ash 04" {
+@DEFAULT changes bodyColor into Ash 04
+goto fem_ashskin_1
+} "Ash 05" {
+@DEFAULT changes bodyColor into Ash 05
+goto fem_ashskin_1
+} "Ash 06" {
+@DEFAULT changes bodyColor into Ash 06
+goto fem_ashskin_1
+} "Ash 07" {
+@DEFAULT changes bodyColor into Ash 07
+goto fem_ashskin_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+}
+"Ash 08" {
+@DEFAULT changes bodyColor into Ash 08
+goto fem_ashskin_1
+} "Ash 09" {
+@DEFAULT changes bodyColor into Ash 09
+goto fem_ashskin_1
+} "Ash 10" {
+@DEFAULT changes bodyColor into Ash 10
+goto fem_ashskin_1
+} <PREMIUM> "Done" {
+goto fem_custom_1
+} <GREEN> "Different Shades" {
+goto fem_skin_1
+}
+
+####################### EYEBROWS #######################
+
+label fem_brows_1
+
+        NARRATOR
+    Eyebrow shapes.
+
+choice [shouldPaginate: YES]
+"Arched Natural"{
+@DEFAULT changes eyebrows into Arched Natural
+goto fem_brows_1
+}"Arched Thick"{
+@DEFAULT changes eyebrows into Arched Thick Styled
+goto fem_brows_1
+}"Arched Thin"{
+@DEFAULT changes eyebrows into Arched Thin
+goto fem_brows_1
+}"Arched Thin High"{
+@DEFAULT changes eyebrows into Arched Thin High
+goto fem_brows_1
+}<GREEN> "Change Color" {
+goto fem_browscolor_1
+}<PREMIUM> "Done"{
+goto fem_custom_1
+}
+"Round Medium"{
+@DEFAULT changes eyebrows into Round Medium
+goto fem_brows_1
+}"Round Thick"{
+@DEFAULT changes eyebrows into Round Thick
+goto fem_brows_1
+}"Round Thin High"{
+@DEFAULT changes eyebrows into Round Thin High
+goto fem_brows_1
+}"Straight Medium"{
+@DEFAULT changes eyebrows into Straight Medium
+goto fem_brows_1
+}<GREEN> "Change Color" {
+goto fem_browscolor_1
+}<PREMIUM> "Done"{
+goto fem_custom_1
+}
+"Arched Natural Scar"{
+@DEFAULT changes eyebrows into Arched Natural Scar
+goto fem_brows_1
+}"High Arch Angled"{
+@DEFAULT changes eyebrows into High Arch Angled
+goto fem_brows_1
+}"Arched Short"{
+@DEFAULT changes eyebrows into Arched Short
+goto fem_brows_1
+}"Bushy Thick"{
+@DEFAULT changes eyebrows into Bushy Thick
+goto fem_brows_1
+}<GREEN> "Change Color" {
+goto fem_browscolor_1
+}<PREMIUM> "Done"{
+goto fem_custom_1
+}
+"Straight Thin"{
+@DEFAULT changes eyebrows into Straight Thin
+goto fem_brows_1
+}"Round Thick Styled"{
+@DEFAULT changes eyebrows into Round Thick Styled
+goto fem_brows_1
+}<GREEN> "Change Color" {
+goto fem_browscolor_1
+}<PREMIUM> "Done"{
+goto fem_faceoptions_1
+}
+
+####################### EYEBROW COLOR #######################
+
+label fem_browscolor_1
+
+        NARRATOR
+    All brow colors.
+
+choice [layout]
+"Natural" {
+goto fem_naturalbrowcolors_1
+}"Dyed"{
+goto fem_dyedbrowcolors_1
+} <GREEN> "Brow Shapes" {
+goto fem_brows_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+
+label fem_naturalbrowcolors_1
+
+        NARRATOR
+    Dark brow colors.
+
+choice [shouldPaginate: YES]
+"Jet Black" {
+@DEFAULT changes eyebrowsColor into blackJet
+goto fem_naturalbrowcolors_1
+}"Dark Black" {
+@DEFAULT changes eyebrowsColor into Black Dark
+goto fem_naturalbrowcolors_1
+}"Deep Brown" {
+@DEFAULT changes eyebrowsColor into Deep Brown
+goto fem_naturalbrowcolors_1
+}"Dark Brown"{
+@DEFAULT changes eyebrowsColor into Dark Brown
+goto fem_naturalbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Chestnut Brown"{
+@DEFAULT changes eyebrowsColor into Chestnut Brown
+goto fem_naturalbrowcolors_1
+}"Warm Brown" {
+@DEFAULT changes eyebrowsColor into Medium Warm Brown
+goto fem_naturalbrowcolors_1
+}"Light Brown" {
+@DEFAULT changes eyebrowsColor into Light Brown
+goto fem_naturalbrowcolors_1
+}"Burgundy Red" {
+@DEFAULT changes eyebrowsColor into Burgundy Red
+goto fem_naturalbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Ginger Red" {
+@DEFAULT changes eyebrowsColor into Ginger Red
+goto fem_naturalbrowcolors_1
+}"Platinum Blonde" {
+@DEFAULT changes eyebrowsColor into Platinum Blonde
+goto fem_naturalbrowcolors_1
+}"Dirty Blonde" {
+@DEFAULT changes eyebrowsColor into Dirty Blonde
+goto fem_naturalbrowcolors_1
+}"Honey Blonde" {
+@DEFAULT changes eyebrowsColor into Honey Blonde
+goto fem_naturalbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Strawberry Blonde" {
+@DEFAULT changes eyebrowsColor into Strawberry Blonde
+goto fem_naturalbrowcolors_1
+}"Medium Blonde" {
+@DEFAULT changes eyebrowsColor into Blonde Medium
+goto fem_naturalbrowcolors_1
+}"Ash Blonde" {
+@DEFAULT changes eyebrowsColor into Ash Blonde
+goto fem_naturalbrowcolors_1
+}"Peach Blonde" {
+@DEFAULT changes eyebrowsColor into Peach Blonde
+goto fem_naturalbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+
+label fem_dyedbrowcolors_1
+
+        NARRATOR
+    Dyed brow colors.
+
+choice [shouldPaginate: YES]
+"Hot Pink" {
+@DEFAULT changes eyebrowsColor into Hot Pink
+goto fem_dyedbrowcolors_1
+} "Light Pink" {
+@DEFAULT changes eyebrowsColor into Pink Lt
+goto fem_dyedbrowcolors_1
+} "Rose Gold" {
+@DEFAULT changes eyebrowsColor into Rose Gold
+goto fem_dyedbrowcolors_1
+} "Purple" {
+@DEFAULT changes eyebrowsColor into Red Purple
+goto fem_dyedbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Purple Lilac" {
+@DEFAULT changes eyebrowsColor into Purple Lilac
+goto fem_dyedbrowcolors_1
+} "Plum" {
+@DEFAULT changes eyebrowsColor into Plum
+goto fem_dyedbrowcolors_1
+} "Dark Purple" {
+@DEFAULT changes eyebrowsColor into Purple
+goto fem_dyedbrowcolors_1
+} "Blue" {
+@DEFAULT changes eyebrowsColor into Blue
+goto fem_dyedbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Light Blue" {
+@DEFAULT changes eyebrowsColor into Cornflower Blue
+goto fem_dyedbrowcolors_1
+} "Aqua Blue" {
+@DEFAULT changes eyebrowsColor into Aqua Blue
+goto fem_dyedbrowcolors_1
+} "Dark Blue" {
+@DEFAULT changes eyebrowsColor into Blue Black
+goto fem_dyedbrowcolors_1
+} "Green" {
+@DEFAULT changes eyebrowsColor into Green
+goto fem_dyedbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Lime Green" {
+@DEFAULT changes eyebrowsColor into Yellow Green
+goto fem_dyedbrowcolors_1
+} "Aqua Green" {
+@DEFAULT changes eyebrowsColor into Aqua Green
+goto fem_dyedbrowcolors_1
+} "Yellow" {
+@DEFAULT changes eyebrowsColor into Yellow
+goto fem_dyedbrowcolors_1
+} "Orange" {
+@DEFAULT changes eyebrowsColor into Orange
+goto fem_dyedbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Red" {
+@DEFAULT changes eyebrowsColor into Red
+goto fem_dyedbrowcolors_1
+} "Copper Red" {
+@DEFAULT changes eyebrowsColor into Copper Red
+goto fem_dyedbrowcolors_1
+} "Grey" {
+@DEFAULT changes eyebrowsColor into Cool Gray
+goto fem_dyedbrowcolors_1
+} "Light Grey" {
+@DEFAULT changes eyebrowsColor into Aqua Gray
+goto fem_dyedbrowcolors_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"White" {
+@DEFAULT changes eyebrowsColor into Warm White
+goto fem_dyedbrowcolors_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+} <GREEN> "Different Colors" {
+goto fem_browscolor_1
+}
+
+####################### FACE SHAPE #######################
+
+label fem_face_1
+
+        NARRATOR
+    Face shapes.
+
+choice [shouldPaginate: YES]
+"Diamond" {
+@DEFAULT changes face into Diamond
+goto fem_face_1
+} "Long Diamond" {
+@DEFAULT changes face into Diamond Long
+goto fem_face_1
+} "Defined Diamond" {
+@DEFAULT changes face into Diamond Defined Contour
+goto fem_face_1
+} "Defined Heart" {
+@DEFAULT changes face into Heart Defined
+goto fem_face_1
+} "Defined Squared" {
+@DEFAULT changes face into Square Defined
+goto fem_face_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Soft Heart" {
+@DEFAULT changes face into Heart Soft
+goto fem_face_1
+} "Defined Triangle" {
+@DEFAULT changes face into Triangle Defined
+goto fem_face_1
+} "Mature Square" {
+@DEFAULT changes face into Square Mature
+goto fem_face_1
+} "Mature Heart" {
+@DEFAULT changes face into Heart Mature
+goto fem_face_1
+} "Soft Round" {
+@DEFAULT changes face into Round Soft
+goto fem_face_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Square Soft" {
+@DEFAULT changes face into Square Soft
+goto fem_face_1
+} "Round Puffy" {
+@DEFAULT changes face into Round Puffy Cheek
+goto fem_face_1
+} "Heart Double Chin" {
+@DEFAULT changes face into Heart Mature Double Chin
+goto fem_face_1
+} "Round Double Chin" {
+@DEFAULT changes face into Round Double Chin
+goto fem_face_1
+} "Long Double Chin" {
+@DEFAULT changes face into Long Double Chin
+goto fem_face_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Square Youth" {
+@DEFAULT changes face into Square Youthful
+goto fem_face_1
+} "Square Aged" {
+@DEFAULT changes face into Square Aged
+goto fem_face_1
+} "Square Chiseled" {
+@DEFAULT changes face into Square Chiseled
+goto fem_face_1
+} "Square Chiseled Cheekbones" {
+@DEFAULT changes face into Square Chiseled Cheekbones
+goto fem_face_1
+} "Triangle Chiseled" {
+@DEFAULT changes face into Triangle Chiseled
+goto fem_face_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+
+####################### EYE SHAPE #######################
+
+label fem_eyes_1
+
+        NARRATOR
+    Eye shapes.
+
+choice [shouldPaginate: YES]
+"Round Wide" {
+@DEFAULT changes eyes into Round Downturned Wide
+goto fem_eyes_1
+} "Round Medium" {
+@DEFAULT changes eyes into Round Medium
+goto fem_eyes_1
+} "Sharp Almond" {
+@DEFAULT changes eyes into Sharp Almond
+goto fem_eyes_1
+} "Generic" {
+@DEFAULT changes eyes into Female Generic
+goto fem_eyes_1
+} <GREEN>"Change Color"{
+goto fem_eyecolor_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Deepset Downturned" {
+@DEFAULT changes eyes into Deepset Downturned
+goto fem_eyes_1
+} "Deepset Wide" {
+@DEFAULT changes eyes into Deepset Upturned Wide
+goto fem_eyes_1
+} "Deepset Almond" {
+@DEFAULT changes eyes into Deepset Almond
+goto fem_eyes_1
+} "Monolid Defined" {
+@DEFAULT changes eyes into Monolid Defined
+goto fem_eyes_1
+} <GREEN>"Change Color"{
+goto fem_eyecolor_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Monolid Slender" {
+@DEFAULT changes eyes into Monolid Slender
+goto fem_eyes_1
+} "Angular Slender" {
+@DEFAULT changes eyes into Angular Slender
+goto fem_eyes_1
+} "Almond Slender" {
+@DEFAULT changes eyes into Hooded Slender Almond
+goto fem_eyes_1
+} "Almond Slender Eyeliner" {
+@DEFAULT changes eyes into Hooded Slender Almond Eyeliner
+goto fem_eyes_1
+} <GREEN>"Change Color"{
+goto fem_eyecolor_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Heavy Lid Upturned" {
+@DEFAULT changes eyes into Heavy Lid Upturned
+goto fem_eyes_1
+}"Heavy Lid Upturned Falsies" {
+@DEFAULT changes eyes into Heavy Lid Upturned Falsies
+goto fem_eyes_1
+} "Delicate Almond" {
+@DEFAULT changes eyes into Delicate Almond
+goto fem_eyes_1
+} "Delicate Almond Falsies" {
+@DEFAULT changes eyes into Delicate Almond Falsies
+goto fem_eyes_1
+} <GREEN>"Change Color"{
+goto fem_eyecolor_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Deepset Downturned Wide" {
+@DEFAULT changes eyes into Deepset Downturned Wide
+goto fem_eyes_1
+}"Deepset Mature" {
+@DEFAULT changes eyes into Deepset Mature
+goto fem_eyes_1
+} "Deepset Smokey Eye" {
+@DEFAULT changes eyes into Deep Set False Lashes Smokey Eye
+goto fem_eyes_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+} <GREEN>"Change Color"{
+goto fem_eyecolor_1
+}
+
+####################### EYE COLOR #######################
+
+label fem_eyecolor_1
+
+        NARRATOR
+    Eye colors.
+
+choice [shouldPaginate: YES]
+"Black" {
+@DEFAULT changes eyesColor into Brown Black
+goto fem_eyecolor_1
+} "Dark Brown" {
+@DEFAULT changes eyesColor into Brown Dark
+goto fem_eyecolor_1
+} "Light Brown" {
+@DEFAULT changes eyesColor into Brown Light
+goto fem_eyecolor_1
+} "Pale Brown" {
+@DEFAULT changes eyesColor into Brown Pale
+goto fem_eyecolor_1
+} <GREEN> "Eye Shapes" {
+goto fem_eyes_1
+} <PREMIUM> "Done"{
+goto fem_faceoptions_1
+}
+"Medium Brown" {
+@DEFAULT changes eyesColor into Brown Medium
+goto fem_eyecolor_1
+} "Deep Brown" {
+@DEFAULT changes eyesColor into Brown Deep
+goto fem_eyecolor_1
+} "Sand Brown" {
+@DEFAULT changes eyesColor into Brown Sand
+goto fem_eyecolor_1
+} "Green" {
+@DEFAULT changes eyesColor into Green Emerald
+goto fem_eyecolor_1
+} <GREEN> "Eye Shapes" {
+goto fem_eyes_1
+} <PREMIUM> "Done"{
+goto fem_faceoptions_1
+}
+"Ice Blue" {
+@DEFAULT changes eyesColor into Ice Blue
+goto fem_eyecolor_1
+} "Aqua Blue" {
+@DEFAULT changes eyesColor into Blue Aqua
+goto fem_eyecolor_1
+} "Deep Blue" {
+@DEFAULT changes eyesColor into Blue Deep
+goto fem_eyecolor_1
+} "Blue Green" {
+@DEFAULT changes eyesColor into Blue Green
+goto fem_eyecolor_1
+} <GREEN> "Eye Shapes" {
+goto fem_eyes_1
+} <PREMIUM> "Done"{
+goto fem_faceoptions_1
+}
+"Silver" {
+@DEFAULT changes eyesColor into Grey Cool
+goto fem_eyecolor_1
+} "Hazel" {
+@DEFAULT changes eyesColor into Hazel
+goto fem_eyecolor_1
+} "Dark Hazel" {
+@DEFAULT changes eyesColor into Hazel Dark
+goto fem_eyecolor_1
+} "Red" {
+@DEFAULT changes eyesColor into Red
+goto fem_eyecolor_1
+} <GREEN> "Eye Shapes" {
+goto fem_eyes_1
+} <PREMIUM> "Done"{
+goto fem_faceoptions_1
+}
+"Violet" {
+@DEFAULT changes eyesColor into Violet
+goto fem_eyecolor_1
+} <PREMIUM> "Done"{
+goto fem_faceoptions_1
+} <GREEN> "Eye Shapes" {
+goto fem_eyes_1
+}
+
+####################### MOUTH SHAPE #######################
+
+label fem_mouth_1
+
+        NARRATOR
+    Lip shapes.
+
+choice [shouldPaginate: YES]
+"Full Heart" {
+@DEFAULT changes mouth into Full Heart Pouty
+goto fem_mouth_1
+}"Full Round" {
+@DEFAULT changes mouth into Full Round Pouty
+goto fem_mouth_1
+}"Medium Heart" {
+@DEFAULT changes mouth into Medium Heart Natural
+goto fem_mouth_1
+}"Medium Thin" {
+@DEFAULT changes mouth into Medium Thin
+goto fem_mouth_1
+}<GREEN>"Change Color"{
+goto fem_mouthcolor_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Thin Heart" {
+@DEFAULT changes mouth into Thin Heart
+goto fem_mouth_1
+}"Small Heart" {
+@DEFAULT changes mouth into Small Heart
+goto fem_mouth_1
+}"Flat Round" {
+@DEFAULT changes mouth into Full Round Flat Top Skin
+goto fem_mouth_1
+}"Medium Downturned" {
+@DEFAULT changes mouth into Medium Downturned Pout
+goto fem_mouth_1
+}<GREEN>"Change Color"{
+goto fem_mouthcolor_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Full Flat Top" {
+@DEFAULT changes mouth into Full Flat Top Pouty
+goto fem_mouth_1
+}"Full Wide" {
+@DEFAULT changes mouth into Full Wide
+goto fem_mouth_1
+}"Heart Shaped" {
+@DEFAULT changes mouth into Heart Shaped Pout
+goto fem_mouth_1
+}"Heart with Braces" {
+@DEFAULT changes mouth into Heart Shaped Pout Braces
+goto fem_mouth_1
+}<GREEN>"Change Color"{
+goto fem_mouthcolor_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+
+####################### MOUTH COLOR #######################
+
+label fem_mouthcolor_1
+
+        NARRATOR
+    All lip colors.
+
+choice
+"Natural" {
+goto fem_NaturalColors_1
+} "Gloss" {
+goto fem_GlossColors_1
+} "Matte" {
+goto fem_MatteColors_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+} <GREEN> "Lip Shapes" {
+goto fem_mouth_1
+}
+
+label fem_NaturalColors_1
+
+        NARRATOR
+    Natural lip colors.
+
+choice [shouldPaginate: YES]
+"Fair Rose" {
+@DEFAULT changes mouthColor into Fair Rose Matte
+goto fem_NaturalColors_1
+} "Fair Neutral" {
+@DEFAULT changes mouthColor into Fair Neutral Matte
+goto fem_NaturalColors_1
+} "Fair Gold" {
+@DEFAULT changes mouthColor into Fair Gold Matte
+goto fem_NaturalColors_1
+} "Beige Light Gold" {
+@DEFAULT changes mouthColor into Beige Light Gold Matte
+goto fem_NaturalColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Beige Gold" {
+@DEFAULT changes mouthColor into Beige Gold Matte
+goto fem_NaturalColors_1
+} "Beige Rose" {
+@DEFAULT changes mouthColor into Beige Rose
+goto fem_NaturalColors_1
+} "Beige Deep Neutral" {
+@DEFAULT changes mouthColor into Beige Deep Neutral
+goto fem_NaturalColors_1
+} "Tan Deep Gold" {
+@DEFAULT changes mouthColor into Tan Deep Gold
+goto fem_NaturalColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Tan Deep Neutral" {
+@DEFAULT changes mouthColor into Tan Deep Neutral
+goto fem_NaturalColors_1
+} "Brown Neutral" {
+@DEFAULT changes mouthColor into Brown Neutral
+goto fem_NaturalColors_1
+} "Brown Gold" {
+@DEFAULT changes mouthColor into Brown Gold
+goto fem_NaturalColors_1
+} "Brown Deep Gold" {
+@DEFAULT changes mouthColor into Brown Deep Gold
+goto fem_NaturalColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Brown Deep Rose" {
+@DEFAULT changes mouthColor into Brown Deep Rose
+goto fem_NaturalColors_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+}
+
+label fem_GlossColors_1
+
+        NARRATOR
+    Gloss lipstick colors.
+
+choice [shouldPaginate: YES]
+"Peach" {
+@DEFAULT changes mouthColor into Peach Gloss
+goto fem_GlossColors_1
+} "Light Peach" {
+@DEFAULT changes mouthColor into Pink Peach Lt Gloss
+goto fem_GlossColors_1
+} "Beige Pink" {
+@DEFAULT changes mouthColor into Pink Beige Gloss
+goto fem_GlossColors_1
+} "Medium Pink" {
+@DEFAULT changes mouthColor into Pink Medium Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Warm Pink" {
+@DEFAULT changes mouthColor into Pink Warm Gloss
+goto fem_GlossColors_1
+} "Hot Pink" {
+@DEFAULT changes mouthColor into Pink Hot Gloss
+goto fem_GlossColors_1
+} "Deep Pink" {
+@DEFAULT changes mouthColor into Pink Deep Gloss
+goto fem_GlossColors_1
+} "Pink Peach" {
+@DEFAULT changes mouthColor into Pink Peach Medium Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Neutral Nude" {
+@DEFAULT changes mouthColor into Neutral Medium Nude Gloss
+goto fem_GlossColors_1
+} "Light Nude" {
+@DEFAULT changes mouthColor into Rose Light Nude Gloss
+goto fem_GlossColors_1
+} "Medium Nude" {
+@DEFAULT changes mouthColor into Rose Medium Nude Gloss
+goto fem_GlossColors_1
+} "Dark Nude" {
+@DEFAULT changes mouthColor into Rose Dark Nude Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Rose" {
+@DEFAULT changes mouthColor into Rose Gloss
+goto fem_GlossColors_1
+} "Mauve" {
+@DEFAULT changes mouthColor into Mauve Gloss
+goto fem_GlossColors_1
+} "Pastel Purple" {
+@DEFAULT changes mouthColor into Purple Pastel Gloss
+goto fem_GlossColors_1
+} "Deep Purple" {
+@DEFAULT changes mouthColor into Purple Deep Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Red" {
+@DEFAULT changes mouthColor into Red Gloss
+goto fem_GlossColors_1
+} "Deep Red" {
+@DEFAULT changes mouthColor into Red Deep Gloss
+goto fem_GlossColors_1
+} "Plum" {
+@DEFAULT changes mouthColor into Plum Gloss
+goto fem_GlossColors_1
+} "Violet" {
+@DEFAULT changes mouthColor into Violet Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Blood Orange" {
+@DEFAULT changes mouthColor into Blood Orange Gloss
+goto fem_GlossColors_1
+} "Red Garnet" {
+@DEFAULT changes mouthColor into Red Garnet Gloss
+goto fem_GlossColors_1
+} "Blackberry" {
+@DEFAULT changes mouthColor into Blackberry Gloss
+goto fem_GlossColors_1
+} "Pink Cashmere" {
+@DEFAULT changes mouthColor into Pink Cashmere Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Ash Deep" {
+@DEFAULT changes mouthColor into Ash Deep Gloss
+goto fem_GlossColors_1
+} "Dark Mauve" {
+@DEFAULT changes mouthColor into Dark Mauve Gloss
+goto fem_GlossColors_1
+} "Dark Amethyst" {
+@DEFAULT changes mouthColor into Dark Amethyst Gloss
+goto fem_GlossColors_1
+} "Royal Blue" {
+@DEFAULT changes mouthColor into Royal Blue Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Dark Apricot" {
+@DEFAULT changes mouthColor into Dark Apricot Gloss
+goto fem_GlossColors_1
+} "Copper Deep" {
+@DEFAULT changes mouthColor into Copper Deep Gloss
+goto fem_GlossColors_1
+} "Gold Deep" {
+@DEFAULT changes mouthColor into Gold Deep Gloss
+goto fem_GlossColors_1
+} "Black" {
+@DEFAULT changes mouthColor into Black Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Deep Rose" {
+@DEFAULT changes mouthColor into Rose Deep Gloss
+goto fem_GlossColors_1
+} "Medium Gold" {
+@DEFAULT changes mouthColor into Gold Medium Gloss
+goto fem_GlossColors_1
+} "Deep Neutral" {
+@DEFAULT changes mouthColor into Neutral Deep Gloss
+goto fem_GlossColors_1
+} "Medium Cooper" {
+@DEFAULT changes mouthColor into Copper Medium Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Dark Pink" {
+@DEFAULT changes mouthColor into Pink Dark Gloss
+goto fem_GlossColors_1
+} "Deep Orange" {
+@DEFAULT changes mouthColor into Orange Deep Gloss
+goto fem_GlossColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+
+label fem_MatteColors_1
+
+        NARRATOR
+    Matte lipstick colors.
+
+choice [shouldPaginate: YES]
+"Peach" {
+@DEFAULT changes mouthColor into Peach Matte
+goto fem_MatteColors_1
+} "Light Peach" {
+@DEFAULT changes mouthColor into Pink Peach Light Matte
+goto fem_MatteColors_1
+} "Beige Pink" {
+@DEFAULT changes mouthColor into Pink Beige Matte
+goto fem_MatteColors_1
+} "Medium Pink" {
+@DEFAULT changes mouthColor into Pink Medium Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Warm Pink" {
+@DEFAULT changes mouthColor into Pink Warm Matte
+goto fem_MatteColors_1
+} "Hot Pink" {
+@DEFAULT changes mouthColor into Pink Hot Matte
+goto fem_MatteColors_1
+} "Deep Pink" {
+@DEFAULT changes mouthColor into Pink Deep Matte
+goto fem_MatteColors_1
+} "Pink Peach" {
+@DEFAULT changes mouthColor into Pink Peach Medium Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Neutral Nude" {
+@DEFAULT changes mouthColor into Neutral Medium Nude Matte
+goto fem_MatteColors_1
+} "Light Nude" {
+@DEFAULT changes mouthColor into Rose Light Nude Matte
+goto fem_MatteColors_1
+} "Medium Nude" {
+@DEFAULT changes mouthColor into Rose Medium Nude Matte
+goto fem_MatteColors_1
+} "Dark Nude" {
+@DEFAULT changes mouthColor into Rose Dark Nude Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Rose" {
+@DEFAULT changes mouthColor into Rose Matte
+goto fem_MatteColors_1
+} "Mauve" {
+@DEFAULT changes mouthColor into Mauve Matte
+goto fem_MatteColors_1
+} "Pastel Purple" {
+@DEFAULT changes mouthColor into Purple Pastel Matte
+goto fem_MatteColors_1
+} "Deep Purple" {
+@DEFAULT changes mouthColor into Purple Deep Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Red" {
+@DEFAULT changes mouthColor into Red Matte
+goto fem_MatteColors_1
+} "Deep Red" {
+@DEFAULT changes mouthColor into Red Deep Matte
+goto fem_MatteColors_1
+} "Plum" {
+@DEFAULT changes mouthColor into Plum Matte
+goto fem_MatteColors_1
+} "Violet" {
+@DEFAULT changes mouthColor into Violet Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Blood Orange" {
+@DEFAULT changes mouthColor into Blood Orange Matte
+goto fem_MatteColors_1
+} "Red Garnet" {
+@DEFAULT changes mouthColor into Red Garnet Matte
+goto fem_MatteColors_1
+} "Blackberry" {
+@DEFAULT changes mouthColor into Blackberry Matte
+goto fem_MatteColors_1
+} "Pink Cashmere" {
+@DEFAULT changes mouthColor into Pink Cashmere Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Ash Deep" {
+@DEFAULT changes mouthColor into Ash Deep Matte
+goto fem_MatteColors_1
+} "Dark Mauve" {
+@DEFAULT changes mouthColor into Dark Mauve Matte
+goto fem_MatteColors_1
+} "Dark Amethyst" {
+@DEFAULT changes mouthColor into Dark Amethyst Matte
+goto fem_MatteColors_1
+} "Royal Blue" {
+@DEFAULT changes mouthColor into Royal Blue Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Dark Apricot" {
+@DEFAULT changes mouthColor into Dark Apricot Matte
+goto fem_MatteColors_1
+} "Copper Deep" {
+@DEFAULT changes mouthColor into Copper Deep Matte
+goto fem_MatteColors_1
+} "Gold Deep" {
+@DEFAULT changes mouthColor into Gold Deep Matte
+goto fem_MatteColors_1
+} "Black" {
+@DEFAULT changes mouthColor into Black Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Deep Rose" {
+@DEFAULT changes mouthColor into Rose Deep Matte
+goto fem_MatteColors_1
+} "Medium Gold" {
+@DEFAULT changes mouthColor into Gold Medium Matte
+goto fem_MatteColors_1
+} "Deep Neutral" {
+@DEFAULT changes mouthColor into Neutral Deep Matte
+goto fem_MatteColors_1
+} "Medium Cooper" {
+@DEFAULT changes mouthColor into Copper Medium Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+"Dark Pink" {
+@DEFAULT changes mouthColor into Pink Dark Matte
+goto fem_MatteColors_1
+} "Deep Orange" {
+@DEFAULT changes mouthColor into Orange Deep Matte
+goto fem_MatteColors_1
+} <GREEN> "Try Other Colors" {
+goto fem_mouthcolor_1
+} <PREMIUM> "Done" {
+goto fem_faceoptions_1
+}
+
+####################### NOSE SHAPE #######################
+
+label fem_nose_1
+
+        NARRATOR
+    Nose shapes.
+
+choice [shouldPaginate: YES]
+"Defined Natural" {
+@DEFAULT changes nose into Defined Natural
+goto fem_nose_1
+} "Grecian Soft" {
+@DEFAULT changes nose into Grecian Soft
+goto fem_nose_1
+} "Round Broad" {
+@DEFAULT changes nose into Round Broad
+goto fem_nose_1
+} "Round Button" {
+@DEFAULT changes nose into Round Button
+goto fem_nose_1
+} "Round Button Upturned" {
+@DEFAULT changes nose into Round Button Upturned
+goto fem_nose_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Round Downturned" {
+@DEFAULT changes nose into Round Downturned
+goto fem_nose_1
+} "Round Flared Upturned" {
+@DEFAULT changes nose into Round Flared Upturned
+goto fem_nose_1
+} "Round Flared Downturned" {
+@DEFAULT changes nose into Round Flared Downturned
+goto fem_nose_1
+} "Pointed Downturned" {
+@DEFAULT changes nose into Pointed Downturned
+goto fem_nose_1
+} "Broad Wide" {
+@DEFAULT changes nose into Broad Wide
+goto fem_nose_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Round Flared Downturned Broad" {
+@DEFAULT changes nose into Round Flared Downturned Broad
+goto fem_nose_1
+} "Round Button Wide" {
+@DEFAULT changes nose into Round Button Wide
+goto fem_nose_1
+} "Round Broad Downturned" {
+@DEFAULT changes nose into Round Broad Downturned
+goto fem_nose_1
+} "Narrow Flared" {
+@DEFAULT changes nose into Narrow Flared
+goto fem_nose_1
+} "Broad Flat" {
+@DEFAULT changes nose into Broad Flat
+goto fem_nose_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Grecian Angular" {
+@DEFAULT changes nose into Grecian Angular
+goto fem_nose_1
+} <PREMIUM>"Done"{
+goto fem_faceoptions_1
+}
+"Wide Broad Downturned" {
+@DEFAULT changes nose into Wide Broad Downturned
+goto fem_nose_1
+}
+
+####################### HAIR STYLE #######################
+
+label fem_hair_1
+
+        NARRATOR
+    All hairstyles.
+
+choice [shouldPaginate: YES]
+"Shorter"{
+goto fem_hairShort_1
+}"Medium"{
+goto fem_hairMedium_1
+}"Longer"{
+goto fem_hairLong_1
+}"Afro-Textured" {
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+} <PREMIUM> "Main Menu" {
+goto fem_custom_1
+}
+"Updo's" {
+goto fem_hairUp_1
+}"Low Styled" {
+goto fem_hairStyled_1
+}"Special Dyed Styles" {
+goto fem_hairSpecialDyeHair_1
+} <PREMIUM> "Main Menu" {
+goto fem_custom_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}
+
+label fem_hairShort_1
+
+        NARRATOR
+    Short hairstyles.
+
+choice [shouldPaginate: YES]
+"Classic Bob" {
+@DEFAULT changes hair into Classic Bob
+goto fem_hairShort_1
+} "Curly Bob" {
+@DEFAULT changes hair into Curly Bob
+goto fem_hairShort_1
+}"Pixie" {
+@DEFAULT changes hair into Short Pixie
+goto fem_hairShort_1
+}"Punk Pixie" {
+@DEFAULT changes hair into Punk Pixie
+goto fem_hairShort_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Short Wavy" {
+@DEFAULT changes hair into Short Wavy Hair Solid
+goto fem_hairShort_1
+}"Blunt Bangs" {
+@DEFAULT changes hair into Blunt Bangs Short
+goto fem_hairShort_1
+} "Wavy Side Shaved" {
+@DEFAULT changes hair into Short Wavy Side Shave
+goto fem_hairShort_1
+}"Curly Blow Out" {
+@DEFAULT changes hair into Short Curly Blow Out
+goto fem_hairShort_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Crew Cut" {
+@DEFAULT changes hair into Crew Cut
+goto fem_hairShort_1
+}"Short Fringe" {
+@DEFAULT changes hair into Short Layered Fringe
+goto fem_hairShort_1
+}"Straight Tucked" {
+@DEFAULT changes hair into Short Straight Tucked
+goto fem_hairShort_1
+}"Emo Pixie" {
+@DEFAULT changes hair into Emo Pixie
+goto fem_hairShort_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Conservative Cut" {
+@DEFAULT changes hair into Conservative Cut
+goto fem_hairShort_1
+}"Parted Bangs" {
+@DEFAULT changes hair into Long Bang Short Hair
+goto fem_hairShort_1
+}"Side Part Curly" {
+@DEFAULT changes hair into Side Part Curly Asymmetrical
+goto fem_hairShort_1
+}"Short Flipped" {
+@DEFAULT changes hair into Short Flipped Wavy Solid
+goto fem_hairShort_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Buzz Cut" {
+@DEFAULT changes hair into Buzz Cut
+goto fem_hairShort_1
+}"Faux Hawk" {
+@DEFAULT changes hair into Long Faux Hawk Solid
+goto fem_hairShort_1
+}"Finger Waves" {
+@DEFAULT changes hair into Finger Waves Hair
+goto fem_hairShort_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}
+
+label fem_hairMedium_1
+
+        NARRATOR
+    Medium hairstyles.
+
+choice [shouldPaginate: YES]
+"Hair Flip" {
+@DEFAULT changes hair into Hair Flip
+goto fem_hairMedium_1
+}"Straight" {
+@DEFAULT changes hair into Straight Medium
+goto fem_hairMedium_1
+}"Lob Bangs" {
+@DEFAULT changes hair into Lob Bangs Blunt
+goto fem_hairMedium_1
+}"Overgrown Bangs" {
+@DEFAULT changes hair into Medium Straight Overgrown Bangs
+goto fem_hairMedium_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Wavy Ombre" {
+@DEFAULT changes hair into Short Wavy Ombre
+goto fem_hairMedium_1
+}"Medium Curly" {
+@DEFAULT changes hair into Medium Curly Solid
+goto fem_hairMedium_1
+}"Parted Wavy" {
+@DEFAULT changes hair into Short Wavy Asymmetrical
+goto fem_hairMedium_1
+} "Wavy Side Curls" {
+@DEFAULT changes hair into Wavy Side Curls
+goto fem_hairMedium_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Layered Wavy Bob" {
+@DEFAULT changes hair into Layered Wavy Bob
+goto fem_hairMedium_1
+}"Straight Down" {
+@DEFAULT changes hair into Medium Straight Down
+goto fem_hairMedium_1
+} "Shoulder Curly" {
+@DEFAULT changes hair into Medium Shoulder Curly
+goto fem_hairMedium_1
+} "3A Shoulder Curls" {
+@DEFAULT changes hair into 3A Shoulder Length Curls Hair
+goto fem_hairMedium_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Voluminous Curls" {
+@DEFAULT changes hair into Voluminous Curls
+goto fem_hairMedium_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}
+
+label fem_hairLong_1
+
+        NARRATOR
+    Long hairstyles.
+
+choice [shouldPaginate: YES]
+"Straight" {
+@DEFAULT changes hair into Long Straight Loose Solid
+goto fem_hairLong_1
+}"Feathered" {
+@DEFAULT changes hair into Long Feathered
+goto fem_hairLong_1
+}"Long Blunt Bangs" {
+@DEFAULT changes hair into Long Straight Loose Bangs Blunt Solid
+goto fem_hairLong_1
+}"Sideswept Bangs" {
+@DEFAULT changes hair into Long Straight Loose Bangs Sideswept Solid
+goto fem_hairLong_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Beach Wave" {
+@DEFAULT changes hair into Beach Wave Hair
+goto fem_hairLong_1
+}"Wavy Long" {
+@DEFAULT changes hair into Wavy Long
+goto fem_hairLong_1
+}"Wavy Parted" {
+@DEFAULT changes hair into Long Wavy Parted Hair
+goto fem_hairLong_1
+}"Feathered Bangs" {
+@DEFAULT changes hair into Long Feathered Bangs Blunt
+goto fem_hairLong_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Long Voluminous Curls" {
+@DEFAULT changes hair into Long Voluminous Curls Loose
+goto fem_hairLong_1
+}"Long Curls" {
+@DEFAULT changes hair into Long Curls
+goto fem_hairLong_1
+}"Wavy Princess Braid" {
+@DEFAULT changes hair into Long Down Wavy Princess Braid
+goto fem_hairLong_1
+}"Loose Curls" {
+@DEFAULT changes hair into Long Loose Curls
+goto fem_hairLong_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Wavy Blowout" {
+@DEFAULT changes hair into Long Wavy Blowout
+goto fem_hairLong_1
+}"Side Shave" {
+@DEFAULT changes hair into Long Side Shave
+goto fem_hairLong_1
+}"Scene Hair" {
+@DEFAULT changes hair into Scene Swoosh
+goto fem_hairLong_1
+}"Slicked Back" {
+@DEFAULT changes hair into Long Straight Slicked Back
+goto fem_hairLong_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Thick Curls" {
+@DEFAULT changes hair into Long Thick Curls
+goto fem_hairLong_1
+}"Loose Bangs Sideswept" {
+@DEFAULT changes hair into Long Wavy Loose Bangs Sideswept
+goto fem_hairLong_1
+}"Layered Side Part" {
+@DEFAULT changes hair into Long Layered Side Part
+goto fem_hairLong_1
+}"Widows Peak" {
+@DEFAULT changes hair into Long Tapered Widows Peak
+goto fem_hairLong_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Long Straight Wavy Parted Ends" {
+@DEFAULT changes hair into Long Straight Wavy Ends Parted
+goto fem_hairLong_1
+}"Side Swept Wavy Long" {
+@DEFAULT changes hair into Side Swept Wavy Long Solid
+goto fem_hairLong_1
+}"Shoulder Length Curly" {
+@DEFAULT changes hair into Shoulder Length Curly Hair
+goto fem_hairLong_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}
+
+
+label fem_hairAfro_1
+
+        NARRATOR
+    Afro-textured hairstyles.
+
+choice [shouldPaginate: YES]
+"Afro" {
+@DEFAULT changes hair into Afro
+goto fem_hairAfro_1
+} "Short Afro" {
+@DEFAULT changes hair into Short Afro
+goto fem_hairAfro_1
+}"Type 4 Afro" {
+@DEFAULT changes hair into Type 4 Afro
+goto fem_hairAfro_1
+}"Natural Afro" {
+@DEFAULT changes hair into Natural Afro
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Type 4 High Puff" {
+@DEFAULT changes hair into Type 4 High Puff Hair
+goto fem_hairAfro_1
+}"Braided Afro Bun" {
+@DEFAULT changes hair into Braided Afro Bun
+goto fem_hairAfro_1
+}"Double Afro Puffs" {
+@DEFAULT changes hair into Curly Double Afro Puffs
+goto fem_hairAfro_1
+}"Natural Pulled Updo" {
+@DEFAULT changes hair into Natural Curly Pulled Updo Hair
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Short Fade" {
+@DEFAULT changes hair into Short Curly Fade
+goto fem_hairAfro_1
+}"Bantu Knots" {
+@DEFAULT changes hair into Bantu Knots
+goto fem_hairAfro_1
+}"Updo Braids" {
+@DEFAULT changes hair into Braids Updo
+goto fem_hairAfro_1
+}"Braided Bun" {
+@DEFAULT changes hair into Braided Bun
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Dreads Braided Parted" {
+@DEFAULT changes hair into Dreads Braided
+goto fem_hairAfro_1
+}"Locks" {
+@DEFAULT changes hair into Shoulder Length Locks Hair
+goto fem_hairAfro_1
+}"Side Shave Braids" {
+@DEFAULT changes hair into Curly Braids Hair
+goto fem_hairAfro_1
+}"Half Up Locs" {
+@DEFAULT changes hair into Half Up Locs Long Hair
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Medium Braided" {
+@DEFAULT changes hair into Medium Braided
+goto fem_hairAfro_1
+}"Long Braided" {
+@DEFAULT changes hair into Long Braided
+goto fem_hairAfro_1
+}"Medium Dreadlocks" {
+@DEFAULT changes hair into Medium Dreadlocks
+goto fem_hairAfro_1
+}"Long Dreadlocks" {
+@DEFAULT changes hair into Long Dreadlocks
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Over Shoulder Locs" {
+@DEFAULT changes hair into Over Shoulder Locs Hair
+goto fem_hairAfro_1
+}"Barrel Roll Locs" {
+@DEFAULT changes hair into Barrel Roll Locs Updo Solid
+goto fem_hairAfro_1
+}"Slicked Down Type4 Curls" {
+@DEFAULT changes hair into Slicked Down Type4 Curls Hair
+goto fem_hairAfro_1
+}"Slicked Down Type3 Curls" {
+@DEFAULT changes hair into Slicked Down Type3 Curls Hair
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"High Bun Twists" {
+@DEFAULT changes hair into High Bun 4C Long Twists
+goto fem_hairAfro_1
+}"Short Top Dreads" {
+@DEFAULT changes hair into Dreads Loose Top Short
+goto fem_hairAfro_1
+}"Mohawk Locs" {
+@DEFAULT changes hair into Mohawk Locs Short
+goto fem_hairAfro_1
+}"Low Pigtails Type 3" {
+@DEFAULT changes hair into Low Pony Pigtails Type3
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Boho Braids" {
+@DEFAULT changes hair into Medium Boho Braids
+goto fem_hairAfro_1
+}"Lemonade Braids" {
+@DEFAULT changes hair into Lemonade Braids
+goto fem_hairAfro_1
+}"Double Braided Buns" {
+@DEFAULT changes hair into Double Braided Buns
+goto fem_hairAfro_1
+}"Locs Updo" {
+@DEFAULT changes hair into Locs Updo
+goto fem_hairAfro_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+
+label fem_hairUp_1
+
+        NARRATOR
+    Updo hairstyles.
+
+choice [shouldPaginate: YES]
+"Updo Low Bun" {
+@DEFAULT changes hair into Updo
+goto fem_hairUp_1
+}"Updo Curly Messy" {
+@DEFAULT changes hair into Updo Curly Messy
+goto fem_hairUp_1
+}"Updo Twist Bangs" {
+@DEFAULT changes hair into Updo High Twist Bangs Blunt
+goto fem_hairUp_1
+}"Morning Updo" {
+@DEFAULT changes hair into Morning Updo
+goto fem_hairUp_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Small Bun" {
+@DEFAULT changes hair into Small Bun
+goto fem_hairUp_1
+}"Messy Sock Bun" {
+@DEFAULT changes hair into Messy Sock Bun
+goto fem_hairUp_1
+}"Double Buns" {
+@DEFAULT changes hair into Double Buns
+goto fem_hairUp_1
+}"Blunt Bangs Ponytail" {
+@DEFAULT changes hair into Pony Tail Blunt Bangs
+goto fem_hairUp_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Braided Curly Pony" {
+@DEFAULT changes hair into Braided Curly Pony
+goto fem_hairUp_1
+}"Messy Ponytail" {
+@DEFAULT changes hair into Short Messy Pony Tail
+goto fem_hairUp_1
+}"Updo Princess Braid" {
+@DEFAULT changes hair into Long Updo Wavy Princess Braid
+goto fem_hairUp_1
+}"High Spiral Pigtail" {
+@DEFAULT changes hair into High Spiral Pigtail Hair
+goto fem_hairUp_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Short Ponytail" {
+@DEFAULT changes hair into Short High Ponytail
+goto fem_hairUp_1
+}"Long Ponytail" {
+@DEFAULT changes hair into Long High Ponytail
+goto fem_hairUp_1
+}"Updo Wide Bangs" {
+@DEFAULT changes hair into Updo Wide Bangs
+goto fem_hairUp_1
+}"Updo Wavy Sleek" {
+@DEFAULT changes hair into Updo Wavy Sleek
+goto fem_hairUp_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Bun Low Sleek" {
+@DEFAULT changes hair into Bun Low Sleek
+goto fem_hairUp_1
+}"Shoulder Curly Half Bun" {
+@DEFAULT changes hair into Medium Shoulder Curly Bun Hair
+goto fem_hairUp_1
+}"High Bun Coil" {
+@DEFAULT changes hair into Type 3 High Bun Coil Hair
+goto fem_hairUp_1
+}"Large Messy Bun Updo" {
+@DEFAULT changes hair into Updo Large Messy Bun Solid
+goto fem_hairUp_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Updo Craxis" {
+@DEFAULT changes hair into Updo Craxis
+goto fem_hairUp_1
+}"Braided Ponytail" {
+@DEFAULT changes hair into Braided Ponytail Hair Complex Color
+goto fem_hairUp_1
+}"Bee Hive Bun" {
+@DEFAULT changes hair into Bee Hive Bun
+goto fem_hairUp_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}
+
+label fem_hairStyled_1
+
+        NARRATOR
+    Low styled hairstyles.
+
+choice [shouldPaginate: YES]
+"Sleek Ponytail" {
+@DEFAULT changes hair into Sleek Ponytail
+goto fem_hairStyled_1
+}"Over Shoulder Braid" {
+@DEFAULT changes hair into Over Shoulder Braid
+goto fem_hairStyled_1
+}"Double Dutch Braids" {
+@DEFAULT changes hair into Long Double Dutch Braids
+goto fem_hairStyled_1
+}"Side Swept" {
+@DEFAULT changes hair into Side Swept Updo Long
+goto fem_hairStyled_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Pinup Rolls" {
+@DEFAULT changes hair into Pinup Victory Rolls
+goto fem_hairStyled_1
+}"High Wavy Pony Tail Over Shoulder" {
+@DEFAULT changes hair into High Wavy Pony Tail Over Shoulder Solid
+goto fem_hairStyled_1
+}"Bouffant Wavy" {
+@DEFAULT changes hair into Bouffant Long Wavy
+goto fem_hairStyled_1
+}"Long Wavy Ponytail" {
+@DEFAULT changes hair into Updo Pony Wavy Long
+goto fem_hairStyled_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Half Up Top Knot Ponytail" {
+@DEFAULT changes hair into Medium Half Up Top Knot Ponytail
+goto fem_hairStyled_1
+}"Long Half Up Ponytail" {
+@DEFAULT changes hair into Long Half Up Ponytail Hair
+goto fem_hairStyled_1
+}"Side Bang Double Bun" {
+@DEFAULT changes hair into Medium Side Bang Double Bun
+goto fem_hairStyled_1
+}"Double Bun Half Down" {
+@DEFAULT changes hair into Double Bun Half Down Hair
+goto fem_hairStyled_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+"Updo Curly Long" {
+@DEFAULT changes hair into Updo Curly Long
+goto fem_hairStyled_1
+}"Long Curl Half Updo" {
+@DEFAULT changes hair into Long Curl Half Updo
+goto fem_hairStyled_1
+}"Full Pigtail" {
+@DEFAULT changes hair into Full Pigtail
+goto fem_hairStyled_1
+}"Punk Hair" {
+@DEFAULT changes hair into Cropped Punk Cut
+goto fem_hairStyled_1
+}<GREEN>"Change Color"{
+goto fem_haircolor_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+
+label fem_hairSpecialDyeHair_1
+
+        NARRATOR
+    Specially dyed hairstyles. Cannot change color.
+
+choice [layout, shouldPaginate: YES]
+"Lob Bangs Purple Orange" {
+@DEFAULT changes hair into Lob Bangs Blunt Hair Purple Orange
+goto fem_hairSpecialDyeHair_1
+}"Over Shoulder Braid Black Pink" {
+@DEFAULT changes hair into Over Shoulder Braid Hair Black Pink
+goto fem_hairSpecialDyeHair_1
+}"Side Part Curly Blonde Pink" {
+@DEFAULT changes hair into Side Part Curly Asymmetrical Hair Blonde Pink
+goto fem_hairSpecialDyeHair_1
+}<PREMIUM>"Back to Styles"{
+goto fem_hair_1
+}
+
+
+####################### HAIR COLOR #######################
+
+label fem_haircolor_1
+
+        NARRATOR
+    All hair colors.
+
+choice
+"Dark"{
+goto fem_hairDark_1
+}"Light" {
+goto fem_hairLight_1
+}"Dyed"{
+goto fem_hairDye_1
+} <PREMIUM> "Main Menu" {
+goto fem_custom_1
+}<GREEN> "Back to Styles" {
+goto fem_hair_1
+}
+
+label fem_hairDark_1
+
+        NARRATOR
+    Dark hair colors.
+
+choice [shouldPaginate: YES]
+"Light Brown" {
+@DEFAULT changes hairColor into Light Brown
+goto fem_hairDark_1
+}"Warm Brown" {
+@DEFAULT changes hairColor into Medium Warm Brown
+goto fem_hairDark_1
+}"Medium Brown" {
+@DEFAULT changes hairColor into Medium Brown
+goto fem_hairDark_1
+}"Chestnut Brown"{
+@DEFAULT changes hairColor into Chestnut Brown
+goto fem_hairDark_1
+}<GREEN>"Different Colors"{
+goto fem_haircolor_1
+}<PREMIUM>"Done"{
+goto fem_custom_1
+}
+"Dark Brown"{
+@DEFAULT changes hairColor into Dark Brown
+goto fem_hairDark_1
+}"Brunette Brown"{
+@DEFAULT changes hairColor into Brunette Brown
+goto fem_hairDark_1
+}"Ginger Red" {
+@DEFAULT changes hairColor into Ginger Red
+goto fem_hairDark_1
+}"Burgundy Red" {
+@DEFAULT changes hairColor into Burgundy Red
+goto fem_hairDark_1
+}<GREEN>"Different Colors"{
+goto fem_haircolor_1
+}<PREMIUM>"Done"{
+goto fem_custom_1
+}
+"Deep Brown" {
+@DEFAULT changes hairColor into Deep Brown
+goto fem_hairDark_1
+}"Brown Black" {
+@DEFAULT changes hairColor into Brown Black
+goto fem_hairDark_1
+}"Dark Black" {
+@DEFAULT changes hairColor into Black Dark
+goto fem_hairDark_1
+}"Jet Black" {
+@DEFAULT changes hairColor into Black Jet
+goto fem_hairDark_1
+}<GREEN>"Different Colors"{
+goto fem_haircolor_1
+}<PREMIUM>"Done"{
+goto fem_custom_1
+}
+"Golden Brown" {
+@DEFAULT changes hairColor into Golden Brown
+goto fem_hairDark_1
+}"Ash Brown" {
+@DEFAULT changes hairColor into Ash Brown
+goto fem_hairDark_1
+}"Auburn Brown" {
+@DEFAULT changes hairColor into Auburn Brown
+goto fem_hairDark_1
+}"Cool Dark Brown" {
+@DEFAULT changes hairColor into Cool Dark Brown
+goto fem_hairDark_1
+}<GREEN>"Different Colors"{
+goto fem_haircolor_1
+}<PREMIUM>"Done"{
+goto fem_custom_1
+}
+
+label fem_hairLight_1
+
+        NARRATOR
+    Light hair colors.
+
+choice [shouldPaginate: YES]
+"Platinum Blonde" {
+@DEFAULT changes hairColor into Platinum Blonde
+goto fem_hairLight_1
+}"Dirty Blonde" {
+@DEFAULT changes hairColor into Dirty Blonde
+goto fem_hairLight_1
+}"Honey Blonde" {
+@DEFAULT changes hairColor into Honey Blonde
+goto fem_hairLight_1
+}"Strawberry Blonde" {
+@DEFAULT changes hairColor into Strawberry Blonde
+goto fem_hairLight_1
+}<GREEN>"Different Colors"{
+goto fem_haircolor_1
+}<PREMIUM>"Done"{
+goto fem_custom_1
+}
+"Medium Blonde" {
+@DEFAULT changes hairColor into Blonde Medium
+goto fem_hairLight_1
+}"Ash Blonde" {
+@DEFAULT changes hairColor into Ash Blonde
+goto fem_hairLight_1
+}"Peach Blonde" {
+@DEFAULT changes hairColor into Peach Blonde
+goto fem_hairLight_1
+}"Platinum White" {
+@DEFAULT changes hairColor into Platinum White
+goto fem_hairLight_1
+}<GREEN>"Different Colors"{
+goto fem_haircolor_1
+}<PREMIUM>"Done"{
+goto fem_custom_1
+}
+
+label fem_hairDye_1
+
+        NARRATOR
+    Dyed hair colors.
+
+choice
+"Pink/Purple" {
+goto fem_hairDye_Pink_1
+}"Blue/Green" {
+goto fem_hairDye_Blue_1
+}"Red/Yellow" {
+goto fem_hairDye_Red_1
+}"White/Grey" {
+goto fem_hairDye_White_1
+}<GREEN>"Different Colors"{
+goto fem_haircolor_1
+}<PREMIUM>"Hairstyles"{
+goto fem_hair_1
+}
+
+label fem_hairDye_Pink_1
+
+        NARRATOR
+    Pink and purple hair colors.
+
+choice [shouldPaginate: YES]
+"Hot Pink" {
+@DEFAULT changes hairColor into Hot Pink
+goto fem_hairDye_Pink_1
+} "Light Pink" {
+@DEFAULT changes hairColor into Pink Lt
+goto fem_hairDye_Pink_1
+} "Warm Pink" {
+@DEFAULT changes hairColor into Warm Pink
+goto fem_hairDye_Pink_1
+} "Rose Gold" {
+@DEFAULT changes hairColor into Rose Gold
+goto fem_hairDye_Pink_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}
+"Purple" {
+@DEFAULT changes hairColor into Red Purple
+goto fem_hairDye_Pink_1
+} "Purple Lilac" {
+@DEFAULT changes hairColor into Purple Lilac
+goto fem_hairDye_Pink_1
+} "Plum" {
+@DEFAULT changes hairColor into Plum
+goto fem_hairDye_Pink_1
+} "Dark Purple" {
+@DEFAULT changes hairColor into Purple
+goto fem_hairDye_Pink_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}
+"Pastel Lavender" {
+@DEFAULT changes hairColor into Pastel Purple Lavender
+goto fem_hairDye_Pink_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}
+
+label fem_hairDye_Blue_1
+
+        NARRATOR
+    Blue and green hair colors.
+
+choice [shouldPaginate: YES]
+"Blue" {
+@DEFAULT changes hairColor into Blue
+goto fem_hairDye_Blue_1
+} "Light Blue" {
+@DEFAULT changes hairColor into Cornflower Blue
+goto fem_hairDye_Blue_1
+} "Aqua Blue" {
+@DEFAULT changes hairColor into Aqua Blue
+goto fem_hairDye_Blue_1
+} "Dark Blue" {
+@DEFAULT changes hairColor into Blue Black
+goto fem_hairDye_Blue_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}
+"Green" {
+@DEFAULT changes hairColor into Green
+goto fem_hairDye_Blue_1
+} "Lime Green" {
+@DEFAULT changes hairColor into Yellow Green
+goto fem_hairDye_Blue_1
+} "Mint" {
+@DEFAULT changes hairColor into Mint
+goto fem_hairDye_Blue_1
+} "Aqua Green" {
+@DEFAULT changes hairColor into Aqua Green
+goto fem_hairDye_Blue_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}
+"Pastel Blue" {
+@DEFAULT changes hairColor into Pastel Blue
+goto fem_hairDye_Blue_1
+} "Pastel Mint" {
+@DEFAULT changes hairColor into Pastel Mint
+goto fem_hairDye_Blue_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}
+
+label fem_hairDye_Red_1
+
+        NARRATOR
+    Red, yellow, & orange hair colors.
+
+choice [shouldPaginate: YES]
+"Yellow" {
+@DEFAULT changes hairColor into Yellow
+goto fem_hairDye_Red_1
+} "Orange" {
+@DEFAULT changes hairColor into Orange
+goto fem_hairDye_Red_1
+} "Red" {
+@DEFAULT changes hairColor into Red
+goto fem_hairDye_Red_1
+} "Copper Red" {
+@DEFAULT changes hairColor into Copper Red
+goto fem_hairDye_Red_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}
+
+label fem_hairDye_White_1
+
+        NARRATOR
+    White & grey hair colors.
+
+choice [shouldPaginate: YES]
+"Grey" {
+@DEFAULT changes hairColor into Cool Gray
+goto fem_hairDye_White_1
+} "Light Grey" {
+@DEFAULT changes hairColor into Aqua Gray
+goto fem_hairDye_White_1
+}"White" {
+@DEFAULT changes hairColor into Warm White
+goto fem_hairDye_White_1
+}"Ice" {
+@DEFAULT changes hairColor into Platinum Ice
+goto fem_hairDye_White_1
+}<GREEN>"Back to Dyed Colors"{
+goto fem_hairDye_1
+}<PREMIUM>"Done" {
+goto fem_custom_1
+}
+
+label fem_end_1
+        NARRATOR
+    Are you happy with how your character looks?
+choice
+<PREMIUM> "Yes, she looks gorgeous!" {
+readerMessage Follow @dara.amarie.ep on Instagram! with messageTitle Customization Template Credit
+@DEFAULT is primp_neutral
+} <GREEN> "No, I want to change something." {
+goto fem_custom_1
+}
+
+INT. FLAT BEDROOM MODERN CLASSIC UPGRADE COMFORT - DAY
+        NARRATOR
+    So... what's your name?
+
+
+label first_name_input
+
+input What's Your First Name?|What's Your First Name?|Done(NAME)
+
+if (NAME is "") {
+
+        NARRATOR
+    You do need a name...
+
+
+goto first_name_input
+
+} else {
+        NARRATOR
+    Hi, [NAME]! Beautiful name by the way!
+continue
+}
+@pan to zone 2
+
+
+@DEFAULT enters from left to screen center
+sound phone_ring
+@DEFAULT is read_phone_shocked
+@DEFAULT is listen_phone_sigh
+        DEFAULT (listen_phone_eyeroll_disgusted)
+    A party?
+
+        DEFAULT (listen_phone_confused)
+    Woah... slow down
+
+        DEFAULT
+    Okay, I'll read my texts Jade, hold on.
+
+set format phonetext
+INT. CELLPHONE - DAY
+        JADE
+    [NAME]!!!!!!!
+
+        JADE
+    You will not believe what just happened
+
+        JADE
+    [NAME] hellloooo??!?! where r u?
+
+        JADE
+    Whatever I'm calling u
+
+INT. FLAT BEDROOM MODERN CLASSIC UPGRADE COMFORT - DAY
+
+@DEFAULT is read_phone_shocked
+@DEFAULT is listen_phone_sigh
+        DEFAULT (listen_phone_eyeroll_disgusted)
+    Okay so what is it then?
+set format spotlight
